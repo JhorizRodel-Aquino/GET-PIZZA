@@ -46,46 +46,68 @@
       </div>
     </section>
 
-    <!-- MAP -->
-    <section class="map pt-40 pb-10">
+    <!-- RECIPE -->
+    <section class="recipe pt-40 pb-10">
       <div class="container">
-        <div class="mx-auto lg:max-w-[70rem]">
-          <iframe
-            class="mx-auto h-[35rem]"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.372058565824!2d121.3454610110676!3d14.055193590139368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5cd2d6006569%3A0x9075b8a72b9d5fb0!2sFrontline%20Business%20Solutions%2C%20Inc.!5e0!3m2!1sen!2sph!4v1724120432357!5m2!1sen!2sph"
-            width="100%"
-            height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="recipe__img mb-10">
+          <img
+            class="rounded-3xl object-cover h-[30rem] mx-auto"
+            src="../IMG/Prosciutto-singlepage.jpeg"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="recipe__wrapper grid gap-36 bg-secondary/30 px-12 py-7 max-w-[25rem] mx-auto lg:grid-cols-[1fr_2fr] lg:max-w-[45rem] lg:gap-20"
+        >
+          <div class="recipe__card">
+            <h3 class="font-bold pb-4">Serving</h3>
+            <ul class="list-disc grid gap-3">
+              <li>Prep: 15 mins</li>
+              <li>Cook: 10 mins</li>
+              <li>Total: 25 mins</li>
+              <li>Servings: 2 servings</li>
+              <li>Yield: 1 pizza</li>
+            </ul>
+          </div>
+
+          <div class="recipe__card">
+            <h3 class="font-bold pb-4">Ingredients</h3>
+            <ul class="list-disc grid gap-3">
+              <li>1 tablespoon tomato paste</li>
+              <li>1 tablespoon water</li>
+              <li>Salt, to taste</li>
+              <li>1 (175 grams) ball store-bought or homemade pizza dough</li>
+              <li>3 ounces barrat cheese, cut into 1-inch pieces</li>
+              <li>4 thin slices prociutto, torn in half lengthwise</li>
+              <li>1/2 cup lightly packed arugula leaves</li>
+              <li>Extra-virgin olive oil, for drizzling</li>
+              <li>1/4 cup shaved Parmesan cheese</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="contact py-10 bg-secondary">
+    <!-- CTA -->
+    <section class="cta bg-primary text-white py-10 lg:pb-0">
       <div class="container">
-        <div class="contact__wrapper lg:max-w-[40rem] mx-auto">
-          <h1 class="text-center font-bold mb-7">GET IN TOUCH</h1>
-          <form class="grid gap-3" action="">
-            <div class="contact__name flex justify-between gap-5">
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
+        <div
+          class="cta__wrapper flex flex-col items-center justify-center text-center lg:flex-row"
+        >
+          <img class="hidden lg:block lg:w-96" src="../IMG/chef.png" alt="" />
+          <div class="cta__details">
+            <h3 class="font-bold">LET'S CONNECT</h3>
+            <p class="mb-5">and get a 10% off bill offers and invites</p>
+            <div class="cta__input p-3 bg-white">
+              <input
+                class="px-3 py-2 focus:text-black focus:outline-none"
+                type="text"
+                placeholder="YOUR EMAIL ADDRESS"
+              />
+              <a class="btn bg-scdryy" href="">SUBSCRIBE</a>
             </div>
-            <input type="email" placeholder="Email Address" />
-            <input type="text" placeholder="Subject" />
-            <textarea
-              class="h-[8rem]"
-              name=""
-              id=""
-              placeholder="Your Message"
-            ></textarea>
-            <a class="btn bg-primaryy justify-self-center mt-2" href=""
-              >SUBMIT FORM</a
-            >
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -140,6 +162,6 @@
     </footer>
 
     <script src="../dist/js/toggle__menu.js"></script>
-    <script src="../dist/js/tabs.js"></script>
+    <script src="../dist/js/menu__tabs.js"></script>
   </body>
 </html>

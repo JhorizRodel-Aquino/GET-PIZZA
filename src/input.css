@@ -126,6 +126,30 @@
     .tns-outer button {
         @apply hidden
     }
+    .menuItems__tabs {
+        @apply bg-secondary flex justify-between py-4 px-5 rounded-2xl mb-8 lg:px-2;
+    }
+    .menuItems__category {
+        @apply cursor-default font-semibold text-tertiary px-2 border-r border-white hover:text-primary duration-500 lg:px-8;
+    }
+    .menuItems__category:last-child{
+        @apply border-none;
+    }
+    .menuItems__details .offer__cards {
+        @apply border-transparent lg:border-white lg:py-5;
+    }
+    .menuItems__category.active {
+        @apply text-primary;
+    }
+    .menuItems__details {
+        @apply hidden opacity-0 duration-500 delay-1000;
+    }
+    .menuItems__details.active {
+        @apply block opacity-100 duration-500 delay-1000; 
+    }
+    .contact form input, .contact form textarea {
+        @apply py-2 px-3 rounded-lg w-[100%] outline-none;
+    }
 }
 
 @layer utilities {
